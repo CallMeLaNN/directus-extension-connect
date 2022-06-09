@@ -1,28 +1,46 @@
 {
-	"compilerOptions": {
-		"target": "ES2019",
-		"lib": ["ES2019", "DOM"],
-		"moduleResolution": "node",
-		"strict": true,
-		"noFallthroughCasesInSwitch": true,
-		"esModuleInterop": true,
-		"noImplicitAny": true,
-		"noImplicitThis": true,
-		"noImplicitReturns": true,
-		"noUnusedLocals": true,
-		"noUncheckedIndexedAccess": true,
-		"noUnusedParameters": true,
-		"alwaysStrict": true,
-		"strictNullChecks": true,
-		"strictFunctionTypes": true,
-		"strictBindCallApply": true,
-		"strictPropertyInitialization": true,
-		"resolveJsonModule": false,
-		"skipLibCheck": true,
-		"forceConsistentCasingInFileNames": true,
-		"allowSyntheticDefaultImports": true,
-		"isolatedModules": true,
-		"rootDir": "./src"
-	},
-	"include": ["./src/**/*.ts"]
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ESNext",
+    "module": "CommonJS",
+    "lib": ["ESNext"],
+
+    /* Basic Options */
+    "allowJs": true,
+    "checkJs": true,
+    "jsx": "preserve",
+    "isolatedModules": true,
+    "sourceMap": true,
+
+    "rootDir": ".",
+
+    "noEmit": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./tsconfig.tsbuildinfo",
+
+    /* Strict Type-Checking Options */
+    "strict": true,
+
+    /* Additional Checks */
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {},
+    "types": ["node"],
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    /* Experimental Options */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["src/index.ts"],
+  "exclude": ["node_modules", ".yarn", ".vscode", "jest.config.js"]
 }
